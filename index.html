@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <!-- todo: add image placeholder -->
+            <img  class="card__image" id="image" src="https://res.cloudinary.com/bettercast/images/f_auto,q_auto:eco/v1646117774/1576874738525/1576874738525.jpg?_i=AA" alt="display picture" />
+            <div class="card__details">
+                <p class="card__details__name" value="Oluwadara Awojide">
+                    <span id="first_name">Oluwadara</span> 
+                    <span id="last_name">Awojide</span>
+                </p>
+                <div class="card__details__contact">
+                    <p class="card__phone" >
+                        <i data-feather="phone" class="phone__icon"></i>
+                        <span id="phone">+234 803 3345 901</span>
+                    </p>
+                    <p class="card__email">
+                        <i data-feather="mail" class="mail__icon"></i>
+                        <a href="#" id="email">oluwadaraawojide@bettercast.com</a>
+                        </p>
+                </div>
+            </div>
+        </div>
+        <p class="helper"><span>You can edit the card </span>details and image directly from here</p>
+
+
+        <form class="modal" id="modal">
+            <input type="text" placeholder="First name" id="firstname_input"/>
+            <input type="text" placeholder="Last name" id="lastname_input"/>
+            <input type="tel" placeholder="Phone" id="phone_input"/>
+            <input text="email" placeholder="Email" id="email_input"/>
+            <input type="text" placeholder="image URL" id="url_input"/>
+
+            <button type="submit" id="modal_btn">Done</button>
+        </form>
+    </main>
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>

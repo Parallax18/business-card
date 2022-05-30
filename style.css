@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    display: flex;
+    margin-top: 3rem;
+    border: 1px solid whitesmoke;
+
+    border-radius: 20px;
+    background: #ffff;
+    box-shadow:  13px 13px 26px #d2d2d2,
+                -13px -13px 26px #ffffff;
+}
+
+.card__image{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    background: whitesmoke;
+}
+
+.card__details{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card__details__name{
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: none;
+    width: 100%;
+}
+
+.card__details__contact{
+    flex: 1;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__phone,
+.card__email{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.phone__icon,
+.mail__icon
+{
+    color: gray;
+    width: 1.2rem;
+    margin-right: 10px;
+}
+
+.helper{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.helper > span {
+    border-bottom: 4px solid tomato;
+}
+
+
+.modal{
+    padding: 1rem;
+    width: 40%;
+    border: 1px solid whitesmoke;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow:  13px 13px 26px #d2d2d2,
+                -13px -13px 26px #ffffff;
+}
+
+.modal > input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    margin-bottom: 10px;
+    background: whitesmoke;
+    outline: none;
+}
+
+.modal > button {
+    width: 100%;
+    padding: 1rem;
+    background-color:rgb(105, 222, 134);
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 30px;
+}
