@@ -48,3 +48,18 @@ phone_input.addEventListener("change", (e) => {
     user.phone = e.target.value
 })
 
+
+
+// var points = new Array(100);
+// for (var i = 0; i < 100; i++) {
+//     points[i] = i + 1; 
+// }
+
+// const conditions = {
+//     4: "Is divisible by 4",
+//     7: "Is divisible by 7",
+// }
+
+// points.map((p) => {
+//     console.log(p, conditions[(p%4)+4], conditions[(p%7)+7])
+// })
